@@ -610,6 +610,164 @@
       .steps-grid { grid-template-columns: 1fr 1fr; }
       .stats-bar { gap: 28px; }
     }
+
+    /* ── FREE GEM-BOT YSI ── */
+    .free-summarizer-section {
+      background: linear-gradient(135deg, #0b1120 0%, #111827 100%);
+      padding: 5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .free-summarizer-section::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -20%;
+      width: 140%;
+      height: 140%;
+      background: radial-gradient(circle at 30% 20%, rgba(79, 156, 249, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    .free-summarizer-section .container {
+      max-width: 880px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .free-summarizer-section .badge {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(79, 156, 249, 0.2);
+      backdrop-filter: blur(4px);
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+      color: #4f9cf9;
+      border: 1px solid rgba(79, 156, 249, 0.4);
+      margin-bottom: 1.75rem;
+      box-shadow: 0 0 8px rgba(79, 156, 249, 0.2);
+    }
+
+    .free-summarizer-section .title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: #f1f5f9;
+      letter-spacing: -0.02em;
+    }
+
+    .free-summarizer-section .gradient-text {
+      background: linear-gradient(120deg, #60a5fa, #a855f7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      position: relative;
+      display: inline-block;
+    }
+
+    .free-summarizer-section .description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #94a3b8;
+      max-width: 720px;
+      margin: 0 auto 2rem auto;
+      background: rgba(18, 22, 30, 0.8);
+      backdrop-filter: blur(8px);
+      padding: 1.2rem 1.8rem;
+      border-radius: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .free-summarizer-section .description strong {
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .free-summarizer-section .developer-link {
+      color: #4f9cf9;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+      border-bottom: 1px dotted rgba(79, 156, 249, 0.5);
+    }
+
+    .free-summarizer-section .developer-link:hover {
+      color: #a855f7;
+      text-shadow: 0 0 6px rgba(168, 85, 247, 0.3);
+      border-bottom-color: #a855f7;
+    }
+
+    .free-summarizer-section .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: linear-gradient(105deg, #4f9cf9 0%, #6366f1 100%);
+      padding: 1rem 2.2rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 20px rgba(79, 156, 249, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(2px);
+      letter-spacing: 0.3px;
+    }
+
+    .free-summarizer-section .cta-button:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(105deg, #3b82f6 0%, #4f46e5 100%);
+      box-shadow: 0 16px 28px rgba(79, 156, 249, 0.4);
+      border-color: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+    }
+
+    .free-summarizer-section .cta-button:active {
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 640px) {
+      .free-summarizer-section {
+        padding: 3rem 1rem;
+      }
+      .free-summarizer-section .description {
+        font-size: 0.95rem;
+        padding: 1rem 1.2rem;
+      }
+      .free-summarizer-section .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+        width: 100%;
+        max-width: 280px;
+      }
+      .free-summarizer-section .title {
+        margin-bottom: 1rem;
+      }
+      .free-summarizer-section .badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .free-summarizer-section .cta-button {
+        font-size: 0.95rem;
+        gap: 0.4rem;
+      }
+      .free-summarizer-section .description {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -640,6 +798,31 @@
     </div>
   </div>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScELr-1mfcw2hLJfy5a_GPhcz1U04IiECN82iHXSjjXXCgXiw/viewform" class="btn-primary" target="_blank" rel="noopener">Try YSI right now ▶</a>
+</section>
+
+<!-- ── FREE GEM-BOT YSI ── -->
+<section class="free-summarizer-section">
+  <div class="container">
+    <div class="badge">🎁 FREE</div>
+    <h2 class="title">
+      Free YouTube Summarizer via<br>
+      <span class="gradient-text">Gem-Bot YSI</span>
+    </h2>
+    <p class="description">
+      <strong>Gem-Bot YSI (YouTube Smart Insights)</strong> — an intelligent assistant that quickly and accurately summarizes YouTube videos.  
+      Developed by <a href="https://romariobro.github.io/projectportfolio/" target="_blank" rel="noopener noreferrer" class="developer-link" aria-label="Roman Mironichev portfolio (opens in new tab)">Roman Mironichev</a>, powered by <strong>Gemini from Google</strong>.  
+      🔓 Available for free to all Gemini users.
+    </p>
+    <a 
+      href="https://gemini.google.com/gem/1n_U0bmzXG-QTUh0Y3V8d6OfEtRHNzXyI?usp=sharing" 
+      class="cta-button" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Try Free Gem-Bot YSI (opens in new tab)"
+    >
+      Try Free Gem-Bot YSI ▶
+    </a>
+  </div>
 </section>
 
 <!-- ── HOW IT WORKS ── -->
